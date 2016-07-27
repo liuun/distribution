@@ -1,0 +1,5 @@
+whitelist:
+  repositories:
+    - gitlab
+  images:
+    - jboss/wildfly

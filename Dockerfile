@@ -9,6 +9,8 @@ RUN set -ex \
 WORKDIR $DISTRIBUTION_DIR
 COPY . $DISTRIBUTION_DIR
 COPY cmd/registry/config-dev.yml /etc/docker/registry/config.yml
+COPY cmd/registry/allower.yml /etc/docker/registry/allower.yml
+
 
 RUN make PREFIX=/go clean binaries
 
